@@ -1,3 +1,23 @@
+<!--
+File: index.html
+GUI Assignment: HW3 Multiplication Table
+Tai Dao, UMass Lowell Managament Information System Major, tai_dao@student.uml.edu
+
+Website Description: User input website utilizing a form and submission button. When user inputs X*X numbers with beginning and end points
+the website will generate a multiplication table that correlates with the users numbers. 
+There are error checkings to see if a user inputs any values that don't work with the program.
+
+
+Sources: 
+https://www.w3schools.com/html/
+https://getbootstrap.com/docs/4.4/components/forms/
+https://getbootstrap.com/docs/4.0/components/buttons/
+
+Copyright (c) 2025 by Dao. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Tai on September 6, 2025 at 2:50 PM
+-->
+
 <!doctype html>
 <html lang="en">
 
@@ -12,18 +32,24 @@
 </head>
 
 <body>
+    <!--Creating a bootstrap container to hold all the content-->
     <div class="container">
         <form>
             <div class="border">
                 <fieldset class="compact-fieldset text-start">
+                     <!--Make columns take up 4 spaces on all sizes-->
                     <div class="col-sm-4">
+                         <!--top numbers of the table-->
                         <legend>Top Numbers</legend>
+                         <!--Input text box-->
                         <input type="text" id="Beginning1" placeholder="Beginning Number">
                         <input type="text" id="Ending1" placeholder="Ending Number">
+                         <!--Error div to allow message to pop p-->
                         <div id="error-message" class="error"></div>
                     </div>
                     <br>
                     <div class="col-sm-4">
+                         <!--side numbers of the table-->
                         <legend>Side Numbers</legend>
                         <input type="text" id="Beginning2" placeholder="Beginning Number">
                         <input type="text" id="Ending2" placeholder="Ending Number">
@@ -38,15 +64,13 @@
     </div>
     </div>
     <br>
+     <!--section for the table to be able to print-->
     <div id='table'>
         <table id="multiplicationtable">
         </table>
     </div>
     </div>
-
-
-
-
+ <!--Bootstrap JS-->
     <script src="js\script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

@@ -1,3 +1,18 @@
+/* <!--
+File:  script.js
+GUI Assignment: Hw3 Multiplication Table
+Tai Dao, UMass Lowell Managament Information System Major, tai_dao@student.uml.edu
+
+JS file to handle and create my multiplcation table
+
+Copyright (c) 2025 by Tai Dao. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Tai on October 1, 2025 at 10:00 PM
+-->*/
+
+
+/*Created a checker function that recieve inputs from the form in the HTMl through the submit button.
+Checks if the numbers are numerical and the boundaries that the number can exceed*/
 function Checker() {
     let check = true;
 
@@ -54,17 +69,23 @@ function Checker() {
     }
 }
 
+/*
+function to create the multiplcation table taking in 4 inputs from the checker function
+*/
 function Table(begin1, end1, begin2, end2) {
     const table = document.getElementById("multiplicationtable");
     let output = "<tr><th></th>";
 
+    /*Creates each column*/
     for (let i = begin1; i <= end1; i++) {
         output += `<th>${i}</th>`;
     }
     output += "</tr>";
 
+    /*creates each row*/
     for (let j = begin2; j <= end2; j++) {
         output += `<tr><th>${j}</th>`;
+        /*Creates each cells*/
         for (let i = begin1; i <= end1; i++) {
             output += `<td>${i * j}</td>`;
         }

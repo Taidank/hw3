@@ -11,67 +11,76 @@ Copyright (c) 2025 by Tai Dao. All rights reserved. May be freely copied or
 excerpted for educational purposes with credit to the author.
 updated by Tai on October 1, 2025 at 10:00 PM
 -->*/
-    
-    
-    body {
-        background-image: url("../pictures/magicpattern-oPH_5xuMgQw-unsplash.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 
-    button {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+/*setting the background of the body to the gradient jpg*/
+body {
+    background-image: url("../pictures/magicpattern-oPH_5xuMgQw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-    .error{      
-        background-color: #ffecec;
-        color: #a2d32f;
-        margin-left: 20px;
-        font-weight: bold;
-        border-radius: 8px;
-    }
+/*Button sizing*/
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-    form {
-        margin: 0 auto;
-        max-width: 500px;
-        padding-top: 50px;
-    }
+/*Error box styling, to make it look cooler*/
+.error {
+    background-color: #ffecec;
+    color: #a2d32f;
+    margin-left: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+}
 
-    .border {
-        justify-content: center;
-        border: 1px solid black;
-    }
+/*centering the form from bootstrap*/
+form {
+    margin: 0 auto;
+    max-width: 500px;
+    padding-top: 50px;
+}
 
+/*border styling around the form*/
+.border {
+    justify-content: center;
+    border: 1px solid black;
+}
 
-    #multiplicationtable {
-        border: 1px solid black;
-        margin: 0 auto;
-    }
+/*Giving the multiplcation borders around the table*/
+#multiplicationtable {
+    border: 1px solid black;
+    margin: 0 auto;
+}
 
-    #multiplicationtable th,
-    #multiplicationtable td {
-        border: 1px solid black;
-        padding: 6px;
-        text-align: center;
-    }
+/*Each data and table header gets it own border to create the grid effect*/
+#multiplicationtable th,
+#multiplicationtable td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: center;
+}
 
-    #table {
-        overflow: scroll;
-    }
+/*Multiplcation table too big allow user to scroll*/
+#table {
+    overflow: scroll;
+}
 
-    .col-sm-4 {
-        margin: 0 auto;
-        text-align: center;
-        display: block;
-    }
+/*bootstrapp column shrinking and centering them to align in the middle of the page*/
+.col-sm-4 {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
 
-    td:nth-child(odd) {
-       background-color: rgba(15, 125, 214, 0.6);
-        color: black;
-    }
+/*every odd data in the table is blueish*/
+td:nth-child(odd) {
+    background-color: rgba(15, 125, 214, 0.6);
+    color: black;
+}
 
-    td:nth-child(even) {
-        background-color: rgba(127, 150, 190, 0.6);
-        color: black;
-    }
+/*every even data in the table is green*/
+td:nth-child(even) {
+    background-color: rgba(127, 150, 190, 0.6);
+    color: black;
+}
