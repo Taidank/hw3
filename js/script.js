@@ -8,6 +8,11 @@ JS file to handle and create my multiplcation table
 Copyright (c) 2025 by Tai Dao. All rights reserved. May be freely copied or
 excerpted for educational purposes with credit to the author.
 updated by Tai on October 1, 2025 at 10:00 PM
+
+
+image source:
+
+https://unsplash.com/photos/a-blurry-photo-of-a-plane-flying-in-the-sky-oPH_5xuMgQw
 -->*/
 
 
