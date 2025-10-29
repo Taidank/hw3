@@ -1,0 +1,62 @@
+    body {
+        background-image: url("/HW3/pictures/magicpattern-oPH_5xuMgQw-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .error{      
+        background-color: #ffecec;
+        color: #a2d32f;
+        margin-left: 20px;
+        font-weight: bold;
+        border-radius: 8px;
+    }
+
+    form {
+        margin: 0 auto;
+        max-width: 500px;
+        padding-top: 50px;
+    }
+
+    .border {
+        justify-content: center;
+        border: 1px solid black;
+    }
+
+
+    #multiplicationtable {
+        border: 1px solid black;
+        margin: 0 auto;
+    }
+
+    #multiplicationtable th,
+    #multiplicationtable td {
+        border: 1px solid black;
+        padding: 6px;
+        text-align: center;
+    }
+
+    #table {
+        overflow: scroll;
+    }
+
+    .col-sm-4 {
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+    td:nth-child(odd) {
+       background-color: rgba(220, 43, 37, 0.6);
+        color: black;
+    }
+
+    td:nth-child(even) {
+          background-color: rgba(15, 107, 58, 0.6);
+        color: black;
+    }
